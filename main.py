@@ -3,7 +3,7 @@ import sys
 
 def main():
     if len(sys.argv) < 2:
-        print("endless-b64:\nUsage: main.py [text] [repeats (optional)]")
+        print("endless-b64:\nUsage: main.py [text]")
         return
     text = sys.argv[1]
     print("Press CTRL+C if you want get encoded text.")
@@ -14,7 +14,6 @@ def main():
         with open('encoded.txt', 'w', encoding='utf-8') as file:
             file.write(text)
         print(f"Encoded text writed in 'encoded.txt'. {len(text)} symbols.")
-    
 
 if __name__ == "__main__":
     main()
