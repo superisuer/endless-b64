@@ -3,7 +3,7 @@ import sys
 
 def main():
     if len(sys.argv) < 2:
-        print("endless-b64:\nUsage: main.py [text]")
+        print("endless-b64:\nUsage: python main.py [text]")
         return
     text = sys.argv[1]
     print("Press CTRL+C if you want get encoded text.")
